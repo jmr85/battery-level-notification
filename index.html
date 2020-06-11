@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./materialize.min.css">
+    <link href="./material_icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./custom.css">
+    <title>Battery Level</title>
+  </head>
+  <body>
+    <!--<img class="icon" src="battery_full-24px.svg" alt="my icon"/>-->
+    <h2>Battery Level</h2>
+    <div class="row">
+      <form class="col s12" action="#">
+        <div class="row">      
+          <label for="vol">Select from which load do you want me to notify you (between 0 and 99 %):</label>
+          <h3 id="valorRango"></h3>
+          <p class="range-field">
+            <input type="range" id="vol" name="vol" min="0" max="99">
+          </p>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <button id="submit" class="waves-effect waves-light btn-large" type="submit">Start</button>   
+          </div>
+          <div class="input-field col s6">
+            <button class="waves-effect waves-light btn-large" id="btn_battery" type="button" name="button">
+              Battery Level              
+            </button>
+          </div>     
+      </div>
+      </form> 
+    </div> 
+    <script src="./materialize.min.js"></script>
+  </body>
+</html>
