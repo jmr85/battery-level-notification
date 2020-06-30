@@ -11,8 +11,8 @@ if(process.env.NODE_ENV !== 'production'){
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 600,
-    height: 500,
+    width: 650,
+    height: 700,
     webPreferences: {
       enableRemoteModule: true,
       preload: path.join(__dirname, 'preload.js')
@@ -51,7 +51,7 @@ function createWindow () {
   mainWindow.loadFile('index.html')
   
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools() //descomentar en modo desarrolla para ver la consola de chrome
   mainWindow.on('closed', () => {
     app.quit();
   });

@@ -16,19 +16,26 @@
     <div class="row">
       <form class="col s12" action="#">
         <div class="row">      
-          <label for="vol">Select from which load do you want me to notify you (between 0 and 99 %):</label>
+          <label for="vol">Select from which load do you want me to notify you (between 5 and 99 %)</label>
           <h3 id="valorRango"></h3>
           <p class="range-field">
-            <input type="range" id="vol" name="vol" min="0" max="99">
+            <input type="range" id="vol" name="vol" min="5" max="99">
+          </p>
+        </div>
+        <div class="row">      
+          <label for="frec"><h4>Frecuency</h4></label>
+          <h3 id="valorFrec"></h3>
+          <p class="range-field">
+            <input type="range" id="frec" name="frec" min="1" max="30">
           </p>
         </div>
         <div class="row">
           <div class="input-field col s6">
-            <button id="submit" class="waves-effect waves-light btn-large" type="submit">Start</button>   
+            <button id="submit" class="waves-effect waves-light btn-large" type="submit">Let Start Notify</button>   
           </div>
           <div class="input-field col s6">
             <button class="waves-effect waves-light btn-large" id="btn_battery" type="button" name="button">
-              Battery Level              
+              Battery Level Now             
             </button>
           </div>     
       </div>
