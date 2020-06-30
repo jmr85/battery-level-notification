@@ -13,3 +13,4 @@ npm install
 # Run the app
 npm start
 ```
+![screen](https://github.com/jmr85/battery-level-notification/blob/master/img.png)
